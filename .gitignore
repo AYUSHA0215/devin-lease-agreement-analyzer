@@ -1,0 +1,29 @@
+# .gitignore file for LeaseGuard AI project
+
+# Ignore node_modules directory
+node_modules/
+
+# Ignore virtual environment directory
+venv/
+
+# Ignore environment variable files
+.env
+
+# Ignore Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore log files
+*.log
+
+# Ignore SQLite database files
+*.sqlite3
+*.db
+
+# Ignore macOS specific files
+.DS_Store
+
+# Ignore Dockerfile to prevent pushing secrets
+Dockerfile

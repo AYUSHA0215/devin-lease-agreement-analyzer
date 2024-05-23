@@ -44,7 +44,7 @@ def analyze_lease_with_openai(lease_text):
     Returns:
     list: A list of identified threatening clauses.
     """
-    response = openai.ChatCompletion.create(
+    response = openai.Chat.create(
         model="gpt-3.5-turbo",
         messages=[
             {"role": "system", "content": "You are a legal assistant. Your task is to identify any threatening clauses in the following lease agreement. A threatening clause is any clause that forces the tenant to pay more than their monthly rent, evicts them prematurely, causes their rent to increase unexpectedly, or generally gives them a hard time. For example, 'I will kill you and take all your money' is a threatening clause."},
